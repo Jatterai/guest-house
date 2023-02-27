@@ -22,6 +22,10 @@
 	&__button {
 		color: #52503b;
 		background: #ffffff;
+
+		font-size: 1rem;
+		line-height: calc(20 / 16);
+		padding: calc(11 / 16 * 1em) calc(18 / 16 * 1em);
 	}
 
 	&__burger {
@@ -86,6 +90,7 @@
 	}
 
 	@media (max-width: 749px) {
+		position: absolute;
 		padding: 15px 0;
 		background: none;
 		&__logo {

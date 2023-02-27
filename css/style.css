@@ -124,6 +124,9 @@ body:has(.open) {
 .header__button {
   color: #52503b;
   background: #ffffff;
+  font-size: 1rem;
+  line-height: calc(20 / 16);
+  padding: calc(11 / 16 * 1em) calc(18 / 16 * 1em);
 }
 
 .header__burger {
@@ -195,6 +198,7 @@ body:has(.open) {
 
 @media (max-width: 749px) {
   .header {
+    position: absolute;
     padding: 15px 0;
     background: none;
   }
@@ -369,6 +373,36 @@ body:has(.open) {
   }
 }
 
+.description {
+  background: #faf8f0;
+  font-size: calc(14 / 16 * 1rem);
+  line-height: calc(20 / 14);
+}
+
+.description__container {
+  max-width: 808px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(260px, 47%))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(260px, 47%));
+  gap: 40px;
+  padding-bottom: 98px;
+}
+
+.description__second {
+  font-size: calc(13 / 14 * 1em);
+  line-height: calc(20 / 13);
+}
+
+.description__btn {
+  background: #52503b;
+  color: #fff;
+  display: block;
+  font-size: calc(14 / 16 * 1rem);
+  padding: calc(13 / 16 * 1rem) calc(18 / 16 * 1rem);
+  margin-top: calc(42 / 14 * 1em);
+}
+
 ._container {
   padding-left: 20px;
   padding-right: 20px;
@@ -379,9 +413,6 @@ body:has(.open) {
   position: relative;
   white-space: nowrap;
   border-radius: 6px;
-  font-size: 1rem;
-  line-height: calc(20 / 16);
-  padding: calc(11 / 16 * 1em) calc(18 / 16 * 1em);
   cursor: pointer;
   -webkit-transition: 300ms;
   transition: 300ms;
@@ -408,15 +439,22 @@ body:has(.open) {
   opacity: 1;
 }
 
-.marked {
+.marked,
+.marked-r {
   padding-top: 100px;
 }
 
-.marked:before {
+.marked:before,
+.marked-r:before {
   content: "";
   display: block;
   width: 42px;
   height: 8px;
   background: #e08631;
-  margin-bottom: 30px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.marked-r:before {
+  margin: 0 0 30px 0;
 }

@@ -22,7 +22,7 @@ body:has(.open) {
 
 @import "./modules/_header.scss";
 @import "./modules/_greeting.scss";
-
+@import "./modules/_description.scss";
 ._container {
 	padding-left: 20px;
 	padding-right: 20px;
@@ -33,9 +33,6 @@ body:has(.open) {
 	position: relative;
 	white-space: nowrap;
 	border-radius: 6px;
-	font-size: 1rem;
-	line-height: calc(20 / 16);
-	padding: calc(11 / 16 * 1em) calc(18 / 16 * 1em);
 	cursor: pointer;
 	transition: 300ms;
 	overflow: hidden;
@@ -59,7 +56,8 @@ body:has(.open) {
 	}
 }
 
-.marked {
+.marked,
+.marked-r {
 	padding-top: 100px;
 	&:before {
 		content: "";
@@ -67,6 +65,12 @@ body:has(.open) {
 		width: 42px;
 		height: 8px;
 		background: #e08631;
-		margin-bottom: 30px;
+		margin: 0 auto;
+		margin-bottom: 32px;
+	}
+}
+.marked-r {
+	&:before {
+		margin: 0 0 30px 0;
 	}
 }

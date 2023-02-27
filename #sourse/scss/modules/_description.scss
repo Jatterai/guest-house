@@ -1,0 +1,25 @@
+.description {
+	background: #faf8f0;
+	font-size: calc(14 / 16 * 1rem);
+	line-height: calc(20 / 14);
+
+	&__container {
+		max-width: 808px;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(260px, 47%));
+		gap: 40px;
+		padding-bottom: 98px;
+	}
+	&__second {
+		font-size: calc(13 / 14 * 1em);
+		line-height: calc(20 / 13);
+	}
+	&__btn {
+		background: #52503b;
+		color: #fff;
+		display: block;
+		font-size: calc(14 / 16 * 1rem);
+		padding: calc(13 / 16 * 1rem) calc(18 / 16 * 1rem);
+		margin-top: calc(42 / 14 * 1em);
+	}
+}
