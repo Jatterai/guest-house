@@ -1,0 +1,58 @@
+.greeting {
+	background: url("../../../img/bg.png") no-repeat;
+	background-size: cover;
+	background-position: 30% 0%;
+	height: 100svh;
+	display: flex;
+	flex-direction: column;
+	color: white;
+
+	&__container {
+		padding-top: clamp(50px, 15vh, 112px);
+		flex: 1 0 auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin-top: 35px;
+	}
+
+	&__logo {
+		flex: 0 0 auto;
+		width: clamp(200px, 21.33vw, 256px);
+		margin: 0 auto;
+		margin-bottom: 35px;
+		img {
+			width: 100%;
+		}
+	}
+
+	&__title {
+		font-size: clamp(25px, 4vw, 48px);
+		line-height: calc(53 / 48 * 1em);
+		margin-bottom: calc(34 / 48 * 1em);
+		text-align: center;
+		color: #ffffff;
+	}
+
+	&__location {
+		font-size: calc(14 / 16 * 1em);
+		line-height: calc(20 / 14);
+		text-align: center;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		color: #ffffff;
+	}
+
+	&__icon {
+		margin-top: clamp(40px, 15vh, 113px);
+		width: 34px;
+		img {
+			width: 100%;
+		}
+
+		@media (max-height: 435px) {
+			display: none;
+		}
+	}
+}

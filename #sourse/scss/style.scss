@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import "./includes/_null.scss";
+
+body:has(.open) {
+	overflow: hidden;
+}
+
+.wrapper {
+	font-family: "Montserrat";
+}
+.header {
+	background: hotpink;
+}
+.footer {
+	background: hotpink;
+}
+
+._container {
+	max-width: 1240px;
+	margin: 0 auto;
+}
+
+@import "./modules/_header.scss";
+@import "./modules/_greeting.scss";
+
+._container {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+/*----------------------------------*/
+
+.btn {
+	position: relative;
+	white-space: nowrap;
+	border-radius: 6px;
+	font-size: 1rem;
+	line-height: calc(20 / 16);
+	padding: calc(11 / 16 * 1em) calc(18 / 16 * 1em);
+	cursor: pointer;
+	transition: 300ms;
+	overflow: hidden;
+	&:before {
+		content: "";
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(to right, rgba(128, 128, 128, 0.393) 0%, transparent 100%);
+		background-blend-mode: multiply;
+		transition: all 300ms ease-in-out;
+		opacity: 0;
+	}
+	&:hover {
+		&:before {
+			opacity: 1;
+		}
+	}
+}
+
+.marked {
+	padding-top: 100px;
+	&:before {
+		content: "";
+		display: block;
+		width: 42px;
+		height: 8px;
+		background: #e08631;
+		margin-bottom: 30px;
+	}
+}
