@@ -44,13 +44,18 @@ button {
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
   letter-spacing: 1;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /*----------------------------------*/
 .wrapper {
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   min-height: 100%;
   display: -webkit-box;
@@ -293,7 +298,7 @@ body:has(.open) {
 }
 
 .greeting {
-  background: url("../../../img/bg.png") no-repeat;
+  background: url("../img/bg.png") no-repeat;
   background-size: cover;
   background-position: 30% 0%;
   height: 100svh;
