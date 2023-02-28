@@ -1,0 +1,14 @@
+.giant-title {
+	&__container {
+		padding-bottom: 140px;
+	}
+
+	h2 {
+		font-weight: 700;
+		font-size: clamp(40px, 8%, 96px);
+		line-height: 1;
+		text-align: center;
+		color: #52503b;
+		white-space: break-spaces;
+	}
+}

@@ -386,7 +386,7 @@ body:has(.open) {
   -ms-grid-columns: (minmax(260px, 47%))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(260px, 47%));
   gap: 40px;
-  padding-bottom: 98px;
+  padding-bottom: 89px;
 }
 
 .description__second {
@@ -401,6 +401,19 @@ body:has(.open) {
   font-size: calc(14 / 16 * 1rem);
   padding: calc(13 / 16 * 1rem) calc(18 / 16 * 1rem);
   margin-top: calc(42 / 14 * 1em);
+}
+
+.giant-title__container {
+  padding-bottom: 140px;
+}
+
+.giant-title h2 {
+  font-weight: 700;
+  font-size: clamp(40px, 8%, 96px);
+  line-height: 1;
+  text-align: center;
+  color: #52503b;
+  white-space: break-spaces;
 }
 
 ._container {

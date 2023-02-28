@@ -23,6 +23,8 @@ body:has(.open) {
 @import "./modules/_header.scss";
 @import "./modules/_greeting.scss";
 @import "./modules/_description.scss";
+@import "./modules/_giant-title.scss";
+
 ._container {
 	padding-left: 20px;
 	padding-right: 20px;
