@@ -43,16 +43,16 @@ html,
 body {
 	min-height: 100%;
 	letter-spacing: 1;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
 body {
-	width: 100%;
-	overflow-x: hidden;
 }
 /*----------------------------------*/
 
 .wrapper {
-	width: 100vw;
+	width: 100%;
 	overflow: hidden;
 	min-height: 100%;
 	display: flex;

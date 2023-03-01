@@ -46,16 +46,13 @@ html,
 body {
   min-height: 100%;
   letter-spacing: 1;
-}
-
-body {
-  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
 /*----------------------------------*/
 .wrapper {
-  width: 100vw;
+  width: 100%;
   overflow: hidden;
   min-height: 100%;
   display: -webkit-box;
@@ -81,10 +78,6 @@ body:has(.open) {
   font-family: "Montserrat";
 }
 
-.header {
-  background: hotpink;
-}
-
 .footer {
   background: hotpink;
 }
@@ -98,8 +91,8 @@ body:has(.open) {
   background: #52503b;
   position: fixed;
   width: 100%;
-  top: 0;
-  left: 0;
+  top: 0%;
+  left: 0%;
 }
 
 .header__container {
@@ -263,8 +256,8 @@ body:has(.open) {
     opacity: 0;
     -webkit-transition: 300ms;
     transition: 300ms;
-    top: 0;
-    left: 120%;
+    top: -40vh;
+    left: 0%;
     width: 100%;
     z-index: 5;
     background: #52503b;
@@ -293,6 +286,7 @@ body:has(.open) {
   }
   .menu.open {
     left: 0%;
+    top: 0;
     opacity: 1;
   }
 }
