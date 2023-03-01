@@ -73,3 +73,13 @@ body:has(.open) {
 		margin: 0 0 30px 0;
 	}
 }
+
+.picture {
+	width: 100%;
+	overflow: hidden;
+	img {
+		width: 100%;
+		aspect-ratio: 1 / 0.41666;
+		object-fit: cover;
+	}
+}

@@ -408,7 +408,7 @@ body:has(.open) {
 
 .giant-title h2 {
   font-weight: 700;
-  font-size: clamp(40px, 8%, 96px);
+  font-size: clamp(40px, 8vw, 96px);
   line-height: 1;
   text-align: center;
   color: #52503b;
@@ -469,4 +469,16 @@ body:has(.open) {
 
 .marked-r:before {
   margin: 0 0 30px 0;
+}
+
+.picture {
+  width: 100%;
+  overflow: hidden;
+}
+
+.picture img {
+  width: 100%;
+  aspect-ratio: 1 / 0.41666;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
