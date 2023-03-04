@@ -21,10 +21,16 @@ body:has(.open) {
 @import "./modules/_greeting.scss";
 @import "./modules/_description.scss";
 @import "./modules/_giant-title.scss";
+@import "./modules/_sleeping.scss";
 
 ._container {
 	padding-left: 20px;
 	padding-right: 20px;
+
+	@media (max-width: 749px) {
+		padding-top: 0;
+		padding-bottom: 50px;
+	}
 }
 /*----------------------------------*/
 
@@ -67,6 +73,9 @@ body:has(.open) {
 		margin: 0 auto;
 		margin-bottom: 32px;
 	}
+	@media (max-width: 749px) {
+		padding-top: 50px;
+	}
 }
 .marked-r {
 	&:before {
@@ -82,4 +91,10 @@ body:has(.open) {
 		aspect-ratio: 1 / 0.41666;
 		object-fit: cover;
 	}
+}
+
+.title {
+	font-size: 2rem;
+	line-height: calc(36 / 32);
+	color: #52503b;
 }
