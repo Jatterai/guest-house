@@ -8,9 +8,6 @@ body:has(.open) {
 .wrapper {
 	font-family: "Montserrat";
 }
-.header {
-	background: hotpink;
-}
 .footer {
 	background: hotpink;
 }
@@ -24,10 +21,17 @@ body:has(.open) {
 @import "./modules/_greeting.scss";
 @import "./modules/_description.scss";
 @import "./modules/_giant-title.scss";
+@import "./modules/_sleeping.scss";
+@import "./modules/_escape.scss";
 
 ._container {
 	padding-left: 20px;
 	padding-right: 20px;
+
+	@media (max-width: 749px) {
+		padding-top: 0;
+		padding-bottom: 50px;
+	}
 }
 /*----------------------------------*/
 
@@ -70,9 +74,28 @@ body:has(.open) {
 		margin: 0 auto;
 		margin-bottom: 32px;
 	}
+	@media (max-width: 749px) {
+		padding-top: 50px;
+	}
 }
 .marked-r {
 	&:before {
 		margin: 0 0 30px 0;
 	}
+}
+
+.picture {
+	width: 100%;
+	overflow: hidden;
+	img {
+		width: 100%;
+		aspect-ratio: 1 / 0.41666;
+		object-fit: cover;
+	}
+}
+
+.title {
+	font-size: 2rem;
+	line-height: calc(36 / 32);
+	color: #52503b;
 }
