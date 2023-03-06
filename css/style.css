@@ -419,10 +419,11 @@ body:has(.open) {
   color: #52503b;
   text-align: center;
   font-size: 1rem;
+  background: #faf8f0;
 }
 
 .sleeping__container {
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 
 .sleeping__title {
@@ -483,6 +484,11 @@ body:has(.open) {
   line-height: calc(20 / 14);
   text-wrap: balance;
   max-width: 400px;
+}
+
+.escape__container {
+  padding: 0 40px 40px 100px;
+  background: red;
 }
 
 ._container {
