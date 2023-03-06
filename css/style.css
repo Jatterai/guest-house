@@ -486,9 +486,52 @@ body:has(.open) {
   max-width: 400px;
 }
 
-.escape__container {
-  padding: 0 40px 40px 100px;
-  background: red;
+.escape {
+  color: #52503b;
+}
+
+.escape ._container {
+  padding: 100px 35px 100px 35px;
+}
+
+.escape__title {
+  margin-bottom: 0.5em;
+}
+
+.escape__description {
+  line-height: 1.5;
+  max-width: 560px;
+  margin-bottom: calc(30 / 16 * 1em);
+}
+
+.escape__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 48.5%))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 48.5%));
+  gap: 42px 32px;
+}
+
+.item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: calc(14 / 16 * 1rem);
+  line-height: calc(20 / 14);
+}
+
+.item__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 36px;
+          flex: 0 0 36px;
+}
+
+.item__img img {
+  width: 100%;
+}
+
+.item__txt {
+  padding-left: 1rem;
 }
 
 ._container {

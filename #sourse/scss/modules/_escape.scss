@@ -1,6 +1,37 @@
 .escape {
-	&__container {
-		padding: 0 40px 40px 100px;
-		background: red;
+	color: #52503b;
+	._container {
+		padding: 100px 35px 100px 35px;
+	}
+	&__title {
+		margin-bottom: 0.5em;
+	}
+
+	&__description {
+		line-height: 1.5;
+		max-width: 560px;
+		margin-bottom: calc(30 / 16 * 1em);
+	}
+
+	&__row {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 48.5%));
+		gap: 42px 32px;
+	}
+}
+
+.item {
+	display: flex;
+	font-size: calc(14 / 16 * 1rem);
+	line-height: calc(20 / 14);
+	&__img {
+		flex: 0 0 36px;
+		img {
+			width: 100%;
+		}
+	}
+
+	&__txt {
+		padding-left: 1rem;
 	}
 }
