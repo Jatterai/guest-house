@@ -1,7 +1,7 @@
 .escape {
 	color: #52503b;
 	._container {
-		padding: 100px 35px 100px 35px;
+		padding: 100px 35px 110px 35px;
 	}
 	&__title {
 		margin-bottom: 0.5em;
@@ -18,20 +18,20 @@
 		grid-template-columns: repeat(auto-fit, minmax(300px, 48.5%));
 		gap: 42px 32px;
 	}
-}
 
-.item {
-	display: flex;
-	font-size: calc(14 / 16 * 1rem);
-	line-height: calc(20 / 14);
-	&__img {
-		flex: 0 0 36px;
-		img {
-			width: 100%;
+	.item {
+		display: flex;
+		font-size: calc(14 / 16 * 1rem);
+		line-height: calc(20 / 14);
+		&__img {
+			flex: 0 0 36px;
+			img {
+				width: 100%;
+			}
 		}
-	}
 
-	&__txt {
-		padding-left: 1rem;
+		&__txt {
+			padding-left: 1rem;
+		}
 	}
 }

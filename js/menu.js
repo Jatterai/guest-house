@@ -1,5 +1,4 @@
 const button = document.querySelector('#main_nav_btn');
-console.log(button);
 
 const menu = document.querySelector('#main_nav');
 
