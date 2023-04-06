@@ -1,0 +1,62 @@
+.together {
+	&__container {
+		padding: 100px 35px 128px;
+	}
+
+	&__row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 100px;
+
+		@media (max-width: 900px) {
+			gap: 50px;
+		}
+	}
+
+	&__title {
+		padding: 0;
+		flex: 1 1 43.8%;
+		max-width: calc(516 / 16 * 1rem);
+		color: #52503b;
+	}
+
+	&__main-title {
+		margin-bottom: calc(14 / 32 * 1em);
+	}
+
+	&__subtitle {
+		line-height: 1.5;
+	}
+
+	&__features {
+		flex: 1 0 auto;
+		font-size: calc(14 / 16 * 1rem);
+		line-height: calc(20 / 14);
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(47%, 1fr));
+		gap: 3.6rem 2rem;
+		color: #333333;
+	}
+
+	&__feature {
+		flex: 1 0 50%;
+	}
+}
+
+.title {
+}
+.marked-r {
+}
+.feature {
+	display: flex;
+	align-items: start;
+	gap: 16px;
+	&__icon {
+		flex: 0 0 2rem;
+	}
+
+	&__txt {
+		padding: 0;
+		margin: 0;
+	}
+}

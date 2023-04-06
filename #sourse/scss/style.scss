@@ -100,3 +100,6 @@ body:has(.open) {
 	line-height: calc(36 / 32);
 	color: #52503b;
 }
+
+@import "./modules/_together.scss";
+@import "./modules/_hurry.scss";

@@ -1,0 +1,63 @@
+.hurry {
+	background: rgba(250, 248, 240, 1);
+	padding-bottom: 100px;
+	&__container {
+		max-width: calc(540 / 15 * 1rem);
+
+		text-align: center;
+	}
+
+	&__title {
+		margin-bottom: calc(12 / 32 * 1em);
+	}
+
+	&__subtitle {
+		line-height: 1.5;
+		margin-bottom: calc(18 / 16 * 1em);
+	}
+
+	&__buttons {
+		font-size: 16px;
+		line-height: 125%;
+		text-align: center;
+
+		display: flex;
+		gap: 20px;
+		justify-content: center;
+	}
+
+	&__btn {
+		padding: 1em calc(26 / 16 * 1em);
+		border-radius: 6px;
+		font-size: 1rem;
+		cursor: pointer;
+		transition: 200ms;
+	}
+
+	&__contact {
+		color: #52503b;
+		background: transparent;
+		box-shadow: inset 0px 0px 0px 0.25em #52503b;
+		&:hover {
+			background: #52503b;
+			color: #ffffff;
+		}
+	}
+
+	&__book {
+		color: #ffffff;
+		background: #52503b;
+		&:hover {
+			color: #52503b;
+			background: transparent;
+			box-shadow: inset 0px 0px 0px 0.25em #52503b;
+		}
+	}
+}
+.marked {
+}
+
+.title {
+}
+.btn {
+}
