@@ -8,9 +8,6 @@ body:has(.open) {
 .wrapper {
 	font-family: "Montserrat";
 }
-.footer {
-	background: hotpink;
-}
 
 ._container {
 	max-width: 1240px;
@@ -103,3 +100,4 @@ body:has(.open) {
 
 @import "./modules/_together.scss";
 @import "./modules/_hurry.scss";
+@import "./modules/_footer.scss";
